@@ -89,6 +89,12 @@ elseif params["ButtonText"][1] ~= "" then
 	TextButton.Visible = true
 elseif params["ButtonText"][2] ~= "" then
 	TextButton_2.Visible = true
+elseif params["ButtonText"][1] == "" and params["ButtonText"][2] == "" then
+	TextButton.Visible = false
+	TextButton_2.Visible = false
+elseif params["ButtonText"][1] ~= "" and params["ButtonText"][2] ~= "" then
+	TextButton.Visible = true
+	TextButton_2.Visible = true
 end
 end
 
