@@ -81,6 +81,15 @@ function uinotifyscript:PromptNotify(title,params)
   TextButton.Text = params["ButtonText"][1]
   TextButton_2.Text = params["ButtonText"][2]
   ScreenGui.Enabled = true
+if params["ButtonText"][1] == "" then
+	TextButton.Visible = false
+elseif params["ButtonText"][2] == "" then
+	TextButton_2.Visible = false
+elseif params["ButtonText"][1] ~= "" then
+	TextButton.Visible = true
+elseif params["ButtonText"][2] ~= "" then
+	TextButton_2.Visible = true
+end
 end
 
 function uinotifyscript:PromptButton(funct)
