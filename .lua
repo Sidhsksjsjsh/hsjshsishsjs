@@ -68,11 +68,19 @@ UICorner_3.CornerRadius = UDim.new(.1, 0)
 UICorner_3.Parent = TextButton_2
 local cstm = false
 
-TextButton.MouseButton1Click:Once(function()
+--[[TextButton.MouseButton1Click:Once(function()
 		ScreenGui.Enabled = false
 end)
 
 TextButton_2.MouseButton1Click:Once(function()
+		ScreenGui.Enabled = false
+end)]]
+
+TextButton.MouseButton1Click:Connect(function()
+		ScreenGui.Enabled = false
+end)
+
+TextButton_2.MouseButton1Click:Connect(function()
 		ScreenGui.Enabled = false
 end)
   
@@ -99,8 +107,8 @@ end
 end
 
 function uinotifyscript:PromptButton(funct)
-TextButton.MouseButton1Click:Once(function()
-		ScreenGui.Enabled = false
+TextButton.MouseButton1Click:Connect(function()
+    ScreenGui.Enabled = false
     funct()
 end)
 end
