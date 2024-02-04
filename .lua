@@ -43,6 +43,7 @@ TextLabel.Text = "Error"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 17.000
 TextLabel.TextWrapped = true
+TextLabel.RichText = true
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
@@ -52,6 +53,7 @@ TextButton.Text = "(...)" -- Yes
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 41.000
 TextButton.TextWrapped = true
+TextButton.RichText = true
             
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
@@ -61,6 +63,7 @@ TextButton_2.Text = "(...)" -- No
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 41.000
 TextButton_2.TextWrapped = true
+TextButton_2.RichText = true
 
 UICorner_2.CornerRadius = UDim.new(.1, 0)
 UICorner_2.Parent = TextButton
